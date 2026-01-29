@@ -2,6 +2,8 @@
 
 A Spring Boot 3.3 backend application for the ACTIA Air Quality Tracking System. This API provides real-time air quality data monitoring, user authentication, data visualization endpoints, and WebSocket support for live updates.
 
+**Frontend:** [https://github.com/skan652/AQS-frontend](https://github.com/skan652/AQS-frontend)
+
 ## Overview
 
 The Air Quality Monitoring System is a comprehensive backend service that:
