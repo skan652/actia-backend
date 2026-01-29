@@ -1,15 +1,12 @@
 package com.example.air.controller;
 
 import com.example.air.entity.Frame1;
-import com.example.air.entity.Frame2;
 import com.example.air.service.Frame1Service;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/frame1")

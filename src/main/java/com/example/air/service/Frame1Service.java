@@ -18,8 +18,6 @@ public class Frame1Service {
     @Autowired
     private final Frame1Repository frame1Repository;
     private List<Frame1> latestData;
-    @Autowired
-    private EmailService emailService;
 
     @Autowired
     private Frame1WebSocketHandler frame1WebSocketHandler;

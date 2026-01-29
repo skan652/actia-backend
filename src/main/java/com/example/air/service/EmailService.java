@@ -20,4 +20,15 @@ public class EmailService {
         message.setText("The gas level has exceeded the threshold. Current level:");
         sender.send(message);
     }
+
+    @Async
+    public void sendFailedLoginAlert(String email) {
+        SimpleMailMessage message = new SimpleMailMessage();
+        message.setTo(email);
+        message.setFrom("no-reply@yourapp.com");
+        message.setSubject("Suspicious Login Attempt Detected");
+        message.setText("Hi, we noticed multiple failed login attempts on your account. " +
+                "If this wasn't you, please take appropriate action.");
+        sender.send(message);
+    }
 }

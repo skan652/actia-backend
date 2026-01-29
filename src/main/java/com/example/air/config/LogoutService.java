@@ -1,6 +1,5 @@
 package com.example.air.config;
 
-import com.example.air.token.Token;
 import com.example.air.token.TokenRepository;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;

@@ -1,7 +1,5 @@
 package com.example.air.user;
 
-import com.example.air.user.ChangePasswordRequest;
-import com.example.air.user.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;

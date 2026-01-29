@@ -1,8 +1,6 @@
 package com.example.air.controller;
 
-import com.example.air.entity.Frame1;
 import com.example.air.entity.Frame2;
-import com.example.air.service.Frame1Service;
 import com.example.air.service.Frame2Service;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;

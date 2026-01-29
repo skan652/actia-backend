@@ -15,9 +15,6 @@ import java.util.List;
 public class Frame2Service {
     @Autowired
     private final Frame2Repository frame2Repository;
-    private List<Frame2> latestData;
-    @Autowired
-    private EmailService emailService;
     @Autowired
     private Frame2WebSocketHandler frame2WebSocketHandler;
     public void addFrametwo(int tempValue, int humValue) {

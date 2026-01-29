@@ -1,5 +1,6 @@
 package com.example.air.controller;
 
+import com.example.air.auth.LoginAlertRequest;
 import com.example.air.service.EmailRequest;
 import com.example.air.service.EmailService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +21,17 @@ public class EmailController {
         } catch (Exception e) {
             e.printStackTrace();
             return "Error sending email: " + e.getMessage();
+        }
+    }
+
+    @PostMapping("/sendFailedLoginAlert")
+    public String sendFailedLoginAlert(@RequestBody LoginAlertRequest request) {
+        try {
+            emailService.sendFailedLoginAlert(request.getEmail());
+            return "Failed login alert sent successfully.";
+        } catch (Exception e) {
+            e.printStackTrace();
+            return "Error sending alert: " + e.getMessage();
         }
     }
 }
